@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import com.inventoryservice.app.config.ModelMapperService;
 import com.inventoryservice.app.exception.BusinessException;
-import com.inventoryservice.app.kafka.InventoryProducer;
 import com.inventoryservice.app.model.Brand;
 import com.inventoryservice.app.repository.BrandRepository;
 import com.inventoryservice.app.requestDto.CreateBrandRequest;
@@ -18,15 +17,14 @@ import com.inventoryservice.app.responseDto.GetAllBrandsResponse;
 import com.inventoryservice.app.responseDto.GetBrandResponse;
 import com.inventoryservice.app.responseDto.UpdateBrandResponse;
 
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class BrandServiceImpl implements BrandService {
 
-	private BrandRepository brandRepository;
-	private ModelMapperService modelMapperService;
-	private InventoryProducer inventoryProducer;
+	private final BrandRepository brandRepository;
+	private final ModelMapperService modelMapperService;
 
 	@Override
 	public List<GetAllBrandsResponse> getAll() {
