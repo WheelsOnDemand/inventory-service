@@ -24,7 +24,6 @@ public class InventoryServiceApplication {
     }
 
     @Bean
-    @Primary
     public ModelMapperService getModelMapperService(ModelMapper mapper) {
         return new ModelMapperManager(mapper);
     }

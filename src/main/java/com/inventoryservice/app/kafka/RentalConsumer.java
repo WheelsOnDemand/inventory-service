@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 
+import com.inventoryservice.app.kafka.events.CarCreatedEvent;
 import com.inventoryservice.app.kafka.events.RentalCreatedEvent;
 import com.inventoryservice.app.kafka.events.RentalUpdatedEvent;
 import com.inventoryservice.app.service.CarService;
