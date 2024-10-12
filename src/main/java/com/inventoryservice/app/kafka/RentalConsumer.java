@@ -23,7 +23,7 @@ public class RentalConsumer {
 	public void consume(RentalCreatedEvent event) {
 		LOGGER.info(String.format("Order event received in stock service => %s", event.toString()));
 
-		carService.updateCarState(event.getCarId(),3); // state değişimi
+		carService.updateCarState(event.getCarId(),3);
 
 		// save the order event into the database
 	}
@@ -31,7 +31,6 @@ public class RentalConsumer {
 	public void consume(RentalUpdatedEvent event) {
 		LOGGER.info(String.format("Order event received in stock service => %s", event.toString()));
 		carService.updateCarState(event.getOldCarId(), 1);
-		carService.updateCarState(event.getNewCarId(), 3); //eski araba yeni araba olacak eski müsait durumna gelir.
-		// save the order event into the database
+		carService.updateCarState(event.getNewCarId(), 3); 
 	}
 }

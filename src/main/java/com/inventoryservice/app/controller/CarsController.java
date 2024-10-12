@@ -19,7 +19,7 @@ import com.inventoryservice.app.responseDto.GetCarResponse;
 import com.inventoryservice.app.responseDto.UpdateCarResponse;
 import com.inventoryservice.app.service.CarService;
 
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import lombok.AllArgsConstructor;
 
 @RestController

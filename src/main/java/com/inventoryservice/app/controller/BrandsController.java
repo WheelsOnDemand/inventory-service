@@ -19,7 +19,7 @@ import com.inventoryservice.app.responseDto.GetBrandResponse;
 import com.inventoryservice.app.responseDto.UpdateBrandResponse;
 import com.inventoryservice.app.service.BrandService;
 
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 import lombok.AllArgsConstructor;
 
 @RestController
