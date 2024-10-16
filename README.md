@@ -1,7 +1,7 @@
 
 ## Inventory Service
 
-This is a simple inventory service that allows you to create, read, update, and delete items in an inventory.
+Inventory service allows you to create, read, update, and delete items in an inventory.
 
 <table>
     <thead>
