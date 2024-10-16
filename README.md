@@ -22,9 +22,9 @@ This is a simple inventory service that allows you to create, read, update, and 
         </tr>
         <tr>
             <td>$\textcolor{cornflowerblue}{GET}$</td>
-            <td>/cars/1</td>
-            <td>/brands/1</td>
-            <td>/models/1</td>
+            <td>/cars/{id}</td>
+            <td>/brands/{id}</td>
+            <td>/models/{id}</td>
         </tr>
         <tr>
             <td>$\textcolor{orange}{POST}$</td>
@@ -34,15 +34,15 @@ This is a simple inventory service that allows you to create, read, update, and 
         </tr>
         <tr>
             <td>$\textcolor{violet}{PUT}$</td>
-            <td>/cars/1</td>
-            <td>/brands/1</td>
-            <td>/models/1</td>
+            <td>/cars/{id}</td>
+            <td>/brands/{id}</td>
+            <td>/models/{id}</td>
         </tr>
         <tr>
             <td>$\textcolor{crimson}{DELETE}$</td>
-            <td>/cars/1</td>
-            <td>/brands/1</td>
-            <td>/models/1</td>
+            <td>/cars/{id}</td>
+            <td>/brands/{id}</td>
+            <td>/models/{id}</td>
         </tr>
     </tbody>
 </table>
